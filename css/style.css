@@ -8,7 +8,7 @@
     --footer-background: #2f303a;
     --portfolio-line: #ececec;
     --footer-contact: rgba(255, 255, 255, 0.60);
-
+}
 
     
   
@@ -19,7 +19,7 @@
     outline: 1px solid red;
 }
 
-boby {
+body {
     font-family: "Roboto";
 }
 
@@ -289,4 +289,119 @@ color: var(--main-color);
     .footer-link{
         color: var(--main-color);
     }
+}
+
+.headerr .container{
+    display: flex;
+    align-items: center;
+    outline: solid red;
+    
+}
+
+
+.headerr-logo{
+    color: var(--logo-color);
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.18;
+        letter-spacing: 0.78px;
+       margin-right: 93px;
+
+        
+}
+
+.headerr-span{
+   color: var(--accent-color);
+}
+
+.headerr-studio:hover {
+    color: var(--accent-color);
+}
+
+.header-contact:hover {
+    color: var(--accent-color);
+}
+
+.headerr-link{
+    color: var(--text-color);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.28px;
+        
+}
+
+.headerr-list{
+    display: flex;
+    gap: 50;
+}
+
+.hero-btn{
+    color: var(--text-color);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.62;
+        /* 162.5% */
+        letter-spacing: 0.48px;
+        border-radius: 4px;
+            background: #F5F4FA;
+            padding: 6px 22px;
+}
+
+.hero-btn:hover{
+    color: var(--main-color);
+    background-color: var(--accent-color);
+}
+
+
+
+.hero-list{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.extra-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.hero{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.extra-title{
+    color: var(--text-color);
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 2;
+        /* 200% */
+        letter-spacing: 1.08px;
+        margin-bottom: 4px;
+}
+
+.extra-item{
+    outline: 1px solid #EEE;
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.extra-img{
+    width: 100%;
+}
+
+.extra-box{
+    padding: 20px 24px;
+}
+
+.extra-text{
+    color: var(--desk-color);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.87;
+        /* 187.5% */
+        letter-spacing: 0.48px;
 }
