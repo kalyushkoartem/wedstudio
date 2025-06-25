@@ -54,6 +54,18 @@ body {
 
 }
 
+
+.header-icon{
+        fill: var(--client-);
+        width: 16px;
+            height: 12px;
+}
+
+.header-icon:nth-child(2){
+width: 10px;
+    height: 16px;
+}
+
 .header-studio:hover{
     color:var(--accent-color);
 
