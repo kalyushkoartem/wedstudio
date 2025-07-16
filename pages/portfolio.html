@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/reset.css" />
-    ;
+    
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -57,7 +57,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="main">
       <section class="hero">
         <div class="container">
           <ul class="hero-list">
@@ -191,7 +191,14 @@
           </ul>
           </div>
         </address>
-      </div>
+      <form class="footer-form">
+          <label class="footer-label">Підпишіться на розсилку
+            <input required class="footer-input" placeholder=" E-mail" type="email">
+          </label>
+          <button class="footer-btn" type="submit">Підписатися <svg class="footer-icons">
+            <use href="./img/symbol-defs.svg#icon-telegram"></use>
+          </svg></button>
+        </form>
     </footer>
   </body>
 </html>
