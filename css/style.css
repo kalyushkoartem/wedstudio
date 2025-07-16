@@ -516,6 +516,9 @@ border-radius: 50%;
     flex-wrap: wrap;
     gap: 30px;
 }
+
+
+
 .hero{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -529,13 +532,41 @@ border-radius: 50%;
         letter-spacing: 1.08px;
         margin-bottom: 4px;
 }
+
+.extra-box1{
+    position: relative;
+}
+
+.extra-text1{
+    color: var(--main-color);
+background: rgba(33, 150, 243, 0.90);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        /* 155.556% */
+        letter-spacing: 0.54px;
+        padding: 63px 24px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+}
+
+
+
+
 .extra-item{
     outline: 1px solid #EEE;
     flex-basis: calc((100% - 60px) / 3);
 
 }
+
+
 .extra-item:hover{
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    .extra-text1{
+        opacity: 1;
+    }
 }
 .extra-img{
     width: 100%;
