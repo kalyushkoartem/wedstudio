@@ -59,7 +59,7 @@ body {
 
 
 .header-icon{
-        fill: var(--client-);
+        fill: var(--desk-color);
         width: 16px;
             height: 12px;
 }
@@ -82,7 +82,7 @@ width: 10px;
     border-radius: 2px;
     background-color: var(--accent-color);
     position: absolute;
-    bottom: -28px;
+    bottom: -32px;
 }
 
 
