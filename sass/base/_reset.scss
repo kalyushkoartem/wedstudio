@@ -1,23 +1,31 @@
-a{
+a {
     text-decoration: none;
 }
-button{
+
+button {
     border: none;
     cursor: alias;
 }
-ul{
+
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-img{
+
+img {
     display: block;
 }
-h1,h2,h3,h4,p{
+
+h1,
+h2,
+h3,
+h4,
+p {
     margin: 0;
 }
 
-address{
+address {
     font-style: normal;
 }
 
@@ -32,4 +40,3 @@ textarea:focus-visible {
     border: none;
     box-shadow: none;
 }
-

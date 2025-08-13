@@ -1,0 +1,40 @@
+.whatwedo {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.whatwedo-subtitle {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.whatwedo-title {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.whatwedo-list {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}/*# sourceMappingURL=whatwedo.css.map */
