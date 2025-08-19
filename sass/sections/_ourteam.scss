@@ -1,12 +1,12 @@
 .ourteam {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--team-background);
+    background-color: $team-background;
 
 }
 
 .ourteam-caption {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -26,7 +26,7 @@
 }
 
 .ourteam-title {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -42,7 +42,7 @@
 .ourteam-box {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: var(--main-color);
+    background-color: $main-color;
 }
 
 .ourteam-lists {
@@ -54,7 +54,7 @@
 }
 
 .ourteam-icon {
-    fill: var(--client-);
+    fill: $accent-color;
     width: 20px;
     height: 20px;
     transition-property: fill;
@@ -75,15 +75,15 @@
 }
 
 .ourteam-link:hover {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 
     .ourteam-icon {
-        fill: var(--main-color);
+        fill: $main-color;
     }
 }
 
 .ourteam-text {
-    color: var(--desk-color);
+    color: $desk-color;
     text-align: center;
     font-size: 16px;
     font-weight: 400;

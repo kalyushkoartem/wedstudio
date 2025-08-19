@@ -23,7 +23,7 @@
     background-color: #FFFFFF;
     width: 528px;
     border-radius: 4px;
-    background: #FFF;
+    background: $main-color;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     position: absolute;
     top: 50%;
@@ -56,13 +56,13 @@
 
 .model-close:is(:hover, :focus) {
     .model-icon {
-        fill: var(--accent-color);
+        fill: $accent-color;
 
     }
 }
 
 .model-title {
-    color: var(--accent-text);
+    color: $accent-text;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -72,7 +72,7 @@
 }
 
 .model-label {
-    color: #757575;
+    color: $desk-color;
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
@@ -96,13 +96,13 @@
 
 
 .model-input:is(:hover, :focus)+.model-icons {
-    fill: var(--accent-color);
+    fill: $accent-color;
 
 
 }
 
 .model-input:is(:hover, :focus) {
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $accent-color;
 }
 
 .model-comment {
@@ -123,7 +123,7 @@
 }
 
 .model-comment:is(:hover, :focus) {
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $accent-color;
 }
 
 
@@ -153,14 +153,14 @@ outline: 1px solid var(--accent-color);
 .model-icons {
     width: 18px;
     height: 18px;
-    fill: var(--text-color);
+    fill: $text-color;
     position: absolute;
     top: 11px;
     left: 12px;
 }
 
 .model-boxx {
-    color: var(--desk-color);
+    color: $desk-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -174,7 +174,7 @@ outline: 1px solid var(--accent-color);
 }
 
 .model-link {
-    color: var(--accent-color);
+    color: $accent-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -194,14 +194,14 @@ outline: 1px solid var(--accent-color);
 }
 
 .model-sent {
-    color: var(--main-color);
+    color: $main-color;
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
     /* 187.5% */
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 10px 52px;
 

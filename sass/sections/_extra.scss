@@ -23,7 +23,7 @@
 
 .extra-text1 {
     color: var(--main-color);
-    background: rgba(33, 150, 243, 0.90);
+    background: $bg-color;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
@@ -40,7 +40,7 @@
 
 
 .extra-item {
-    outline: 1px solid #EEE;
+    outline: 1px solid $main2-color;
     flex-basis: calc((100% - 60px) / 3);
     transition-property: box-shadow;
     transition-duration: 250ms;

@@ -3,7 +3,7 @@
 }
 
 .client-title {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -12,7 +12,7 @@
 }
 
 .client-icon {
-    fill: var(--client-);
+    fill: $client-color;
     width: 106px;
     height: 60px;
     transition-property: fill;
@@ -21,10 +21,10 @@
 }
 
 .client-link:hover {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
 
     .client-icon {
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }
 
@@ -32,7 +32,7 @@
     width: 170px;
     height: 92px;
     border-radius: 4px;
-    border: 1px solid var(--client-);
+    border: 1px solid $client-color;
     padding: 16px 32px;
     display: flex;
     align-items: center;
