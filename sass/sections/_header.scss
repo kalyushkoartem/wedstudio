@@ -1,4 +1,4 @@
-.header {
+.header{
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid $portfolio-line;
@@ -6,14 +6,15 @@
     width: 100%;
     background-color: $main-color;
     z-index: 1;
-}
 
-.header .container {
+
+     & .container {
     display: flex;
     align-items: center;
 }
 
-.header-logo {
+
+&__logo {
     color: $logo-color;
     font-family: Raleway;
     font-size: 26px;
@@ -27,6 +28,131 @@
     animation-duration: 2500ms;
     animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+
+&__studio {
+    color: $text-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover {
+    color: $accent-color;
+}
+}
+
+&__item {
+    position: relative;
+}
+
+
+&__icon {
+    fill: $desk-color;
+    width: 16px;
+    height: 12px;
+
+    &:nth-child(2) {
+    width: 10px;
+    height: 16px;
+}
+
+}
+
+
+
+
+
+&__contact {
+    color: $desk-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+    color: $accent-color;
+
+    .header-icon {
+        fill: $accent-color;
+    }
+}
+
+}
+
+&__icon {
+    width: 16px;
+    height: 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+&__span {
+    color:$accent-color;
+}
+
+
+
+&__list {
+    display: flex;
+    gap: 50px;
+}
+
+
+&__color {
+    color: $text-color;
+}
+
+&__lister {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+}
+
+
+.active {
+    color: $accent-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+   &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    position: absolute;
+    bottom: -32px;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+
+
+
 
 @keyframes move {
     0% {
@@ -42,115 +168,16 @@
     }
 }
 
-.header-studio {
-    color: $text-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.header-item {
-    position: relative;
-}
 
 
 
 
-.header-icon {
-    fill: $desk-color;
-    width: 16px;
-    height: 12px;
-}
-
-.header-icon:nth-child(2) {
-    width: 10px;
-    height: 16px;
-}
-
-.header-studio:hover {
-    color: $accent-color;
-}
-
-.active {
-    color: $accent-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.active::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: $accent-color;
-    position: absolute;
-    bottom: -32px;
-    transition-property: opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
-.header-contact:hover {
-    color: $accent-color;
 
-    .header-icon {
-        fill: $accent-color;
-    }
-}
 
-.header-icon {
-    width: 16px;
-    height: 12px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header-contact {
-    color: $desk-color;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header-span {
-    color:$accent-color;
-}
 
-.header-list {
-    display: flex;
-    gap: 50px;
-}
 
-.header-color {
-    color: $text-color;
-}
 
-.header-items {
-    display: flex;
-    gap: 50px;
-    margin-left: auto;
-}
-
-.main {
-    padding: 80px 0px 0px 0px;
-}
