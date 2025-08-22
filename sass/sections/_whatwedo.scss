@@ -1,11 +1,9 @@
 .whatwedo {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
 
-
-.whatwedo-subtitle {
+    &__subtitle {
     color: $main-color;
     text-align: center;
     font-size: 14px;
@@ -22,7 +20,9 @@
     padding-bottom: 27px;
 }
 
-.whatwedo-title {
+
+
+&__title {
     color:$text-color;
     text-align: center;
     font-size: 36px;
@@ -32,7 +32,8 @@
     margin-bottom: 50px;
 }
 
-.whatwedo-list {
+
+&__list {
     display: flex;
     gap: 30px;
     position: relative;
@@ -40,3 +41,11 @@
     justify-content: center;
     align-items: baseline;
 }
+}
+
+
+
+
+
+
+

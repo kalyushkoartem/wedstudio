@@ -3,9 +3,8 @@
     padding-bottom: 94px;
     background-color: $team-background;
 
-}
 
-.ourteam-caption {
+    &__caption {
     color: $text-color;
     text-align: center;
     font-size: 36px;
@@ -15,17 +14,19 @@
     margin-bottom: 50px;
 }
 
-.ourteam-list {
+
+&__list {
     display: flex;
     gap: 30px;
 }
 
-.ourteam-item {
+&__item {
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     border-radius: 0px 0px 4px 4px;
 }
 
-.ourteam-title {
+
+&__title {
     color: $text-color;
     text-align: center;
     font-size: 16px;
@@ -35,17 +36,19 @@
     margin-bottom: 10px;
 }
 
-.ourteam-img {
+
+&__img {
     width: 270px;
 }
 
-.ourteam-box {
+
+&__box {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: $main-color;
 }
 
-.ourteam-lists {
+&__lists {
     margin-top: 16px;
     display: flex;
     justify-content: center;
@@ -53,7 +56,7 @@
     gap: 10px;
 }
 
-.ourteam-icon {
+&__icon {
     fill: $accent-color;
     width: 20px;
     height: 20px;
@@ -62,7 +65,9 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ourteam-link {
+
+
+&__link {
     width: 44px;
     height: 44px;
     display: flex;
@@ -72,17 +77,17 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.ourteam-link:hover {
+    &:hover {
     background-color: $accent-color;
 
     .ourteam-icon {
         fill: $main-color;
     }
 }
+}
 
-.ourteam-text {
+
+&__text {
     color: $desk-color;
     text-align: center;
     font-size: 16px;
@@ -91,3 +96,26 @@
     letter-spacing: 0.48px;
 
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
