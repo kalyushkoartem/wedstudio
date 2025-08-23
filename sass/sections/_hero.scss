@@ -1,4 +1,9 @@
-.hero-btn {
+.hero {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+
+    &__btn {
     color: $text-color;
     text-align: center;
     font-size: 16px;
@@ -12,22 +17,25 @@
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.hero-btn:hover {
+    &:hover {
     color: $main-color;
     background-color:$accent-color;
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
-
-.hero-list {
+}
+&__list {
     display: flex;
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
 }
-
-.hero {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
+
+
+
+
+
+
+
+
