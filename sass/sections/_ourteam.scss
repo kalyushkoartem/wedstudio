@@ -57,7 +57,7 @@
 }
 
 &__icon {
-    fill: $accent-color;
+    fill: $client-color;
     width: 20px;
     height: 20px;
     transition-property: fill;
@@ -80,7 +80,7 @@
     &:hover {
     background-color: $accent-color;
 
-    .ourteam-icon {
+    .ourteam__icon {
         fill: $main-color;
     }
 }

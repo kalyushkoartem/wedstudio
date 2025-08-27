@@ -56,14 +56,15 @@
     width: 16px;
     height: 12px;
 
-    &:nth-child(2) {
+
+}
+
+
+    &__icons {
+        fill: $desk-color;
     width: 10px;
     height: 16px;
 }
-
-}
-
-
 
 
 
@@ -84,7 +85,11 @@
     &:hover {
     color: $accent-color;
 
-    .header-icon {
+    .header__icon {
+        fill: $accent-color;
+    }
+
+     .header__icons {
         fill: $accent-color;
     }
 }
