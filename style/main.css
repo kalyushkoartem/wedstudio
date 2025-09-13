@@ -46,20 +46,47 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   outline: 1px solid red;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
   position: fixed;
   width: 100%;
   background-color: #fff;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 .header .container {
   display: flex;
@@ -72,12 +99,22 @@ body {
   font-weight: 700;
   line-height: 1.18;
   letter-spacing: 0.78px;
-  margin-right: 93px;
+  margin-right: auto;
   animation-name: move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-duration: 2500ms;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 .header__studio {
   color: #212121;
@@ -94,6 +131,14 @@ body {
 }
 .header__item {
   position: relative;
+}
+.header__nav {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: flex;
+  }
 }
 .header__icon {
   fill: #757575;
@@ -128,6 +173,18 @@ body {
 .header__contact:hover .header__icons {
   fill: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .header__contact {
+    font-size: 12px;
+    letter-spacing: 0.24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+  }
+}
 .header__icon {
   width: 16px;
   height: 12px;
@@ -144,14 +201,29 @@ body {
 .header__list {
   display: flex;
   gap: 50px;
+  margin-right: auto;
 }
 .header__color {
   color: #212121;
 }
 .header__lister {
-  display: flex;
-  gap: 50px;
+  display: none;
+  gap: 30px;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__lister {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__lister {
+    gap: 30px;
+    flex-direction: row;
+  }
 }
 
 .active {
