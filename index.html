@@ -25,6 +25,9 @@
         <a class="header__logo" href="./index.html"
           ><span class="header__span">Web</span>Studio</a
         >
+        <button class="header__btn" data-mobule-open type="button"><svg class="header__menu">
+          <use href="./img/symbol-defs.svg#icon-menu"></use>
+        </svg></button>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
@@ -53,6 +56,26 @@
             </svg> +38 096 111 11 11</a>
           </li>
         </ul>
+        <div data-module class="module">
+<button class="module__colse" data-mobule-close type="button"><svg class="module__icon">
+  <use href="/img/symbol-defs.svg#icon-close"></use>
+</svg></button>
+<ul class="module__list">
+  <li class="module__item"><a class="module__link" href="./index.html">Студія</a></li>
+  <li class="module__item"><a class="module__link" href="./pages/portfolio.html">Портфоліо</a></li>
+  <li class="module__item"><a class="module__link" href="">Контакти</a></li>
+</ul>
+<ul>
+  <li class="module__itm"><a href="tel:380961111111">+38 096 111 11 11</a></li>
+  <li class="module__itm"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+</ul>
+<ul class="module__wrap">
+  <li class="module__elem"><a href="" class="module__social">Instagram</a></li>
+  <li class="module__elem"><a href="" class="module__social">Twitter</a></li>
+  <li class="module__elem"><a href="" class="module__social">Facebook</a></li>
+  <li class="module__elem"><a href="" class="module__social">LinkedIn</a></li>
+</ul>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -349,5 +372,6 @@
 </form>
 </div>
     <script type="module" src="./model/model.js"></script>
+    <script type="module" src="./model/menu.js"></script>
   </body>
 </html>
