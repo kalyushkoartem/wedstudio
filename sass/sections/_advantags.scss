@@ -1,6 +1,10 @@
 .advantags {
-  padding-top: 94px;
+  padding-top: 60px;
   background-color: $main-color;
+
+@media screen and (min-width:1200px) {
+  padding-top: 94px;
+}
 
   &__title {
     color: $text-color;
@@ -10,6 +14,10 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 10px;
+text-align: center;
+    @media screen and (min-width:768px) {
+      text-align: start;
+    }
   }
 
  
@@ -21,18 +29,30 @@
     line-height: 1.71;
     /* 171.429% */
     letter-spacing: 0.42px;
+    width: 100%;
+
+    @media screen and (min-width:480px) {
+      width: 450px;
+    }
+     @media screen and (min-width:768px) {
+      width: 354px;
+    }
+     @media screen and (min-width:1200px) {
+      width: 270px;
+    }
   }
 
   &__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
   }
 
   &__item {
     &::before {
       content: "";
       display: block;
-      width: 270px;
+      width: 100%;
       height: 120px;
       border-radius: 4px;
       background: $team-background;
@@ -40,6 +60,16 @@
       background-image: url(../img/antenna.png);
       background-repeat: no-repeat;
       background-position: center;
+
+      @media screen and (min-width:480px) {
+        width: 450px;
+      }
+         @media screen and (min-width:768px) {
+        width: 354px;
+      }
+         @media screen and (min-width:1200px) {
+         width: 270px;
+      }
     }
 
     &:nth-child(2)::before {

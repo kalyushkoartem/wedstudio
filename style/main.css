@@ -359,8 +359,13 @@ body {
 }
 
 .advantags {
-  padding-top: 94px;
+  padding-top: 60px;
   background-color: #fff;
+}
+@media screen and (min-width: 1200px) {
+  .advantags {
+    padding-top: 94px;
+  }
 }
 .advantags__title {
   color: #212121;
@@ -370,6 +375,12 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .advantags__title {
+    text-align: start;
+  }
 }
 .advantags__text {
   color: #757575;
@@ -378,15 +389,32 @@ body {
   line-height: 1.71;
   /* 171.429% */
   letter-spacing: 0.42px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .advantags__text {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantags__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantags__text {
+    width: 270px;
+  }
 }
 .advantags__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 .advantags__item::before {
   content: "";
   display: block;
-  width: 270px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
@@ -394,6 +422,21 @@ body {
   background-image: url(../img/antenna.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 480px) {
+  .advantags__item::before {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantags__item::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantags__item::before {
+    width: 270px;
+  }
 }
 .advantags__item:nth-child(2)::before {
   background-image: url(../img/clock.png);
@@ -408,6 +451,12 @@ body {
 .whatwedo {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .whatwedo {
+    display: block;
+  }
 }
 .whatwedo__subtitle {
   color: #fff;
