@@ -521,10 +521,27 @@ body {
 .ourteam__list {
   display: flex;
   gap: 30px;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .ourteam__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .ourteam__item {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .ourteam__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ourteam__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .ourteam__title {
   color: #212121;
@@ -585,28 +602,70 @@ body {
 }
 
 .client {
-  padding: 94px 0px;
+  padding: 60px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    padding: 94px 0px;
+  }
 }
 .client__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .client__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+.client__item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .client__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 768px) {
+  .client__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 .client__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
-  padding: 16px 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .client__link {
+    width: 210px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .client__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: 172px;
+    height: 92px;
+  }
 }
 .client__link:hover {
   border: 1px solid #2196f3;
@@ -628,6 +687,7 @@ body {
   justify-content: center;
   gap: 30px;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .footer {
@@ -813,6 +873,7 @@ body {
     align-items: start;
   }
 }
+
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
