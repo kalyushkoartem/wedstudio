@@ -552,9 +552,6 @@ body {
   letter-spacing: 0.48px;
   margin-bottom: 10px;
 }
-.ourteam__img {
-  width: 270px;
-}
 .ourteam__box {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -632,10 +629,13 @@ body {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .client__item {
     flex-basis: calc((100% - 150px) / 6);
   }
+}
+.client__img {
+  width: 100%;
 }
 .client__link {
   width: 100%;
