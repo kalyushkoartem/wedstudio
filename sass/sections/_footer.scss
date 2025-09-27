@@ -39,6 +39,22 @@
     color: $accent-color;
 }
 
+&__content{
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        gap: 165px;
+    }
+
+    @media screen and (min-width:1200px) {
+        gap: 70px;
+        align-items: baseline;
+
+    }
+}
+
 
 &__link {
     color: $footer-contact;
@@ -59,6 +75,10 @@ letter-spacing: 0.03em;
 text-align: center;
 color: #fff;
 width: 232px;
+
+@media screen and (min-width:1200px) {
+    text-wrap: nowrap;
+}
 }
 
 &__icon {
@@ -90,7 +110,8 @@ width: 232px;
     justify-content: start;
     flex-direction: column;
 align-items: center;
-    @media screen and (min-width:768px) {
+
+    @media screen and (min-width:1200px) {
         flex-direction: row;
           align-items: baseline;
     }
@@ -136,10 +157,19 @@ align-items: center;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 450px;
+    }
     
 
     @media screen and (min-width:1200px) {
         text-align: start;
+        align-items: start;
+        width: 358px;
     }
 }
 
@@ -159,6 +189,15 @@ align-items: center;
     background: $footer-end;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-top: 20px;
+
+    @media screen and (min-width:768px) {
+        width: 450px;
+        
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
    
     
 
@@ -205,7 +244,7 @@ align-items: center;
 
     @media screen and (min-width:1200px) {
         flex-direction: row;
-        align-items: start;
+        align-items: end;
     }
 }
 
