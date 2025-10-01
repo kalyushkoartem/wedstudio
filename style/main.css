@@ -686,16 +686,13 @@ body {
 .client__list {
   display: flex;
   flex-wrap: wrap;
-}
-@media screen and (min-width: 768px) {
-  .client__list {
-    gap: 30px;
-  }
+  gap: 30px;
 }
 @media screen and (min-width: 1200px) {
   .client__list {
     flex-wrap: nowrap;
     justify-content: space-between;
+    gap: 0px;
   }
 }
 
@@ -920,6 +917,7 @@ body {
   .footer__form {
     flex-direction: row;
     align-items: end;
+    width: 572px;
   }
 }
 
