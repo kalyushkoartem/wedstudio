@@ -711,6 +711,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__list {
     align-items: start;
+    margin-bottom: 0px;
   }
 }
 .footer__logo {
