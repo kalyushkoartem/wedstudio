@@ -86,11 +86,15 @@
 
 &__list {
     display: flex;
-    gap: 30px;
     flex-wrap: wrap;
+
+    @media screen and (min-width:768px) {
+        gap: 30px;
+    }
 
     @media screen and (min-width:1200px) {
         flex-wrap: nowrap;
+        justify-content: space-between;
     }
 }
 
