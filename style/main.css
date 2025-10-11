@@ -1223,8 +1223,14 @@ outline: 1px solid var(--accent-color);
 }
 
 .hero {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 121px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 155px;
+    padding-bottom: 94px;
+  }
 }
 .hero__btn {
   color: #212121;
@@ -1248,9 +1254,21 @@ outline: 1px solid var(--accent-color);
 }
 .hero__list {
   display: flex;
-  justify-content: center;
   gap: 8px;
+  row-gap: 15px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+@media screen and (min-width: 1200px) {
+  .hero__list {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__list {
+    justify-content: center;
+  }
 }
 
 .extra__list {
@@ -1274,6 +1292,7 @@ outline: 1px solid var(--accent-color);
 .extra__text1 {
   color: #fff;
   background: rgba(33, 150, 243, 0.9);
+  width: 402px;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -1291,10 +1310,20 @@ outline: 1px solid var(--accent-color);
 }
 .extra__item {
   outline: 1px solid #EEE;
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .extra__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .extra__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .extra__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
